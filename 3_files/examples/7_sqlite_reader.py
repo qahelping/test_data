@@ -1,8 +1,24 @@
-import pandas as pd
+import sqlite3
 
-# Чтение
-df = pd.read_csv('data.csv')
-print(df.head())  # Первые 5 строк
+conn = sqlite3.connect("test.db")
 
-# Запись
-df.to_csv('output.csv', index=False)
+cursor = conn.cursor()
+#
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS users (
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL,
+#     age INTEGER
+# )
+# """)
+#
+# cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ("Alice", 25))
+#
+# conn.commit()
+
+cursor.execute("SELECT * FROM users")
+rows = cursor.fetchall()
+
+print(rows)  # [(1, 'Alice', 25)]
+
+conn.close()

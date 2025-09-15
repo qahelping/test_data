@@ -1,7 +1,7 @@
 import csv
 from csv import DictReader
 
-from files.files import CSV_FILE_PATH
+from files import CSV_FILE_PATH
 
 with open(CSV_FILE_PATH, newline='') as f:
     reader = csv.reader(f)

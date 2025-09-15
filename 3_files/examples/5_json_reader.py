@@ -1,5 +1,5 @@
 import json
-from files.files import JSON_FILE_PATH
+from files import JSON_FILE_PATH
 
 # Вот так лучше не делать "../files/example.json"
 with open(JSON_FILE_PATH, "r") as f:

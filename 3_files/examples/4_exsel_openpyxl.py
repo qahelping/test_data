@@ -1,6 +1,6 @@
 from openpyxl import Workbook, load_workbook
 
-from files.files import EXCEL_FILE_PATH
+from files import EXCEL_FILE_PATH
 
 # Чтение
 wb = load_workbook(EXCEL_FILE_PATH)

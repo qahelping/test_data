@@ -1,6 +1,6 @@
 from PyPDF2 import PdfReader
 
-from files.files import PDF_FILE_PATH
+from files import PDF_FILE_PATH
 
 
 reader = PdfReader(PDF_FILE_PATH)

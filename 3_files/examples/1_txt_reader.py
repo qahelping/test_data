@@ -1,5 +1,4 @@
-from files.files import TXT_FILE_PATH
-
+from files import TXT_FILE_PATH
 # "r"	Чтение (по умолчанию)
 # "w"	Запись (перезаписывает файл, если не существует — создаёт)
 # "a"	Дозапись в конец файла
