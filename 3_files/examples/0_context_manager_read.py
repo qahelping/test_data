@@ -9,11 +9,8 @@ with expression [as variable]:
 
 # Без менеджера контекста
 file = open('example.txt', 'r')
-try:
-    data = file.read()
-    # Работа с файлом
-finally:
-    file.close()  # Важно не забыть закрыть файл
+data = file.read()
+file.close()  # Важно не забыть закрыть файл
 
 # С менеджером контекста
 with open('example.txt', 'r') as file:

@@ -9,10 +9,10 @@ from files import TXT_FILE_PATH
 some_file = open(TXT_FILE_PATH, "r")
 
 # Read the exact bites amount
-# print(some_file.read(7))
+print(some_file.read(7))
 
 # Read a single line
-# print(some_file.readline())
+print(some_file.readline())
 
 # Get all lines as list
 print(some_file.readlines(), "\n")

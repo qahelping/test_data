@@ -6,6 +6,8 @@ from dotenv import load_dotenv, dotenv_values
 load_dotenv()
 print(os.getenv("LOGIN"))
 print(os.getenv("PASSWORD"))
+print(os.getenv("PASSWORD2"))
+print(os.getenv("ENV", 'test'))
 
 # -------------------------------
 env_values = dotenv_values("../.env.secret")

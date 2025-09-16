@@ -7,6 +7,7 @@ with open(JSON_FILE_PATH, "r") as f:
     users = json.loads(f.read())
 
 users_list = users['users']
+print(users_list[1].get('name'))
 
 for user in users_list:
     print(user)

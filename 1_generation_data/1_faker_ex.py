@@ -3,6 +3,7 @@
 from faker import Faker
 
 # fake = Faker('ru_RU')  # Для русскоязычных данных
+# или
 fake = Faker()  # Для данных по умолчанию (en_US)
 
 # Имя
