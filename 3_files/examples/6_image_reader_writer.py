@@ -5,6 +5,7 @@ with open(JPEG_FILE_PATH, "rb") as file:
     with open('temp_image.jpeg', "wb") as new_file:
         new_file.write(img)
 
+
     with open('temp_image.jpeg', "rb") as new_file:
         img_res = file.read()
 
@@ -20,16 +21,16 @@ with open(JPEG_FILE_PATH, "rb") as file:
 
     assert img == img_res
 
-# from files import PNG_FILE_PATH
-#
-# with open(PNG_FILE_PATH, "rb") as file:
-#     img = file.read()
-#     with open('temp_image.png', "wb") as new_file:
-#         new_file.write(img)
-#
-# from files import JPG_FILE_PATH
-#
-# with open(JPG_FILE_PATH, "rb") as file:
-#     img = file.read()
-#     with open('temp_image.jpg', "wb") as new_file:
-#         new_file.write(img)
+from files import PNG_FILE_PATH
+
+with open(PNG_FILE_PATH, "rb") as file:
+    img = file.read()
+    with open('temp_image.png', "wb") as new_file:
+        new_file.write(img)
+
+from files import JPG_FILE_PATH
+
+with open(JPG_FILE_PATH, "rb") as file:
+    img = file.read()
+    with open('temp_image.jpg', "wb") as new_file:
+        new_file.write(img)

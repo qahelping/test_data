@@ -28,4 +28,4 @@ resolved_env = {k: substitute(v, env_values) for k, v in env_values.items()}
 print(resolved_env)
 
 # ENV=prod pytest 2_test_data_management/main.py
-print(os.getenv("ENV"))
+print("ENV", os.getenv("ENV"))

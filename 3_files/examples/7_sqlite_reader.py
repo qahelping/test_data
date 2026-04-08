@@ -22,3 +22,5 @@ rows = cursor.fetchall()
 print(rows)  # [(1, 'Alice', 25)]
 
 conn.close()
+
+print("hello world")

@@ -1,9 +1,11 @@
 import os
+from contextlib import contextmanager
 
-with expression [as variable]:
-    pass
-    # Блок кода, работающий в контексте
-    # Ресурсы автоматически освобождаются после выхода из блока
+#
+# with expression [as variable]:
+#     pass
+#     # Блок кода, работающий в контексте
+#     # Ресурсы автоматически освобождаются после выхода из блока
 
 
 

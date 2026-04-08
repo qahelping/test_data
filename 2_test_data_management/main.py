@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 @pytest.fixture
 def user_data():
     load_dotenv()
+    print("ENV", os.getenv("ENV", 'test'))
     return {"login": "test_user", "password": "12345", "env": os.getenv('ENV')}
 
 def test_login(user_data):

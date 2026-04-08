@@ -23,5 +23,6 @@ some_file.writelines([fake.sentence(), fake.sentence(), fake.sentence()])
 some_file.close()
 
 # encoding
-some_file = open("example_write.txt", "x", encoding="utf-8")
+some_file = open("example_write_x.txt", "x", encoding="utf-8")
+some_file.writelines([fake.sentence(), fake.sentence(), fake.sentence()])
 some_file.close()

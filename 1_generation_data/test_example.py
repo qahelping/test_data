@@ -35,6 +35,13 @@ def test_fake_unique(fake_unique):
 def test_fake_seed(fake_seed):
     print(fake_seed)
     a, b = fake_seed
+    assert 'TMSG-1043' == a
+    assert 'TMSG-3218' == b
+    # assert a == b
+
+def test_fake_seed_error(fake_seed):
+    print(fake_seed)
+    a, b = fake_seed
     assert 'TMSG' in a
     assert 'TMSG' in b
     assert a == b

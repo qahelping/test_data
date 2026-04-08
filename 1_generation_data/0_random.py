@@ -31,7 +31,7 @@ print(random.choice([
         ]))
 
 
-random.seed(42)
+random.seed('42')
 print(random.randint(-100, 10))
 
 def generate_password(length=12):
