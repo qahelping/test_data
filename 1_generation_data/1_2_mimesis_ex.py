@@ -7,6 +7,7 @@ print(person.full_name())  # Иван Иванов
 print(person.email())  # ivan.petrov@example.com
 print(person.telephone())  # +7 495 123-45-67
 
+
 person = Person(locale=Locale.KO, seed=0xFF)
 person.full_name()
 

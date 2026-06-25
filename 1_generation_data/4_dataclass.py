@@ -32,4 +32,6 @@ class User:
 
 
 user1 = User.generate_data()
+print(user1.address)
 user2 = User.generate_data()
+print(user2.address)

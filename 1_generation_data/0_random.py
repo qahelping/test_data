@@ -3,8 +3,9 @@ import secrets
 import string
 
 
-
 print(random.randint(-100, 10))
+
+
 print(random.choice([
             "Open",
             "In Progress",

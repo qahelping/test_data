@@ -42,7 +42,7 @@ def generate_user():
         'email': fake.email(),
         'phone': fake.phone_number(),
         'address': fake.address(),
-        'birth_date': fake.date_of_birth(minimum_age=18, maximum_age=90),
+        'birth_date': fake.date_of_birth(minimum_age=18, maximum_age=900),
         'registration_date': fake.date_this_decade(),
         'is_active': fake.boolean(chance_of_getting_true=80)
     }
@@ -59,3 +59,4 @@ def generate_task(user_id=None):
     }
 
 print(generate_task())
+print(fake.bothify('+7(999)###-##-##'))

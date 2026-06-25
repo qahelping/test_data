@@ -9,6 +9,7 @@ from contextlib import contextmanager
 
 
 
+
 # Без менеджера контекста
 file = open('example.txt', 'r')
 data = file.read()

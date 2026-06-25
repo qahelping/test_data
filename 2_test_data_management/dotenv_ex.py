@@ -4,8 +4,8 @@ import re
 from dotenv import load_dotenv, dotenv_values
 
 load_dotenv()
-print(os.getenv("LOGIN"))
-print(os.getenv("PASSWORD"))
+print(os.getenv("LOGIN1"))
+print(os.getenv("PASSWORD1"))
 print(os.getenv("PASSWORD2"))
 print(os.getenv("ENV", 'test'))
 

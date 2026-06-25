@@ -5,23 +5,24 @@ from faker import Faker
 fake = Faker('ru_RU')  # Для русскоязычных данных
 # или
 # fake = Faker()  # Для данных по умолчанию (en_US)
-
-# Имя
+#
+# # Имя
 # Faker.seed(42)
+print('Faker.seed(42)')
 print(fake.name())  # 'Иванов Иван Иванович'
 print(fake.first_name())  # 'Иван'
 print(fake.last_name())  # 'Иванов'
 
-# Адрес
+# # Адрес
 print(fake.address())  # 'ул. Ленина, д. 123, кв. 45'
 print(fake.city())  # 'Москва'
 print(fake.country())  # 'Россия'
-
-# Контакты
-print(fake.email())  # 'ivanov@example.com'
+#
+# # Контакты
+print(fake.email(domain='gmail.com'))  # 'ivanov@example.com'
 print(fake.phone_number())  # '+7 (123) 456-78-90'
 
-
+#
 print(fake.date_of_birth())  # datetime.date(1990, 5, 15)
 print(fake.date_this_decade())  # '2023-07-22'
 print(fake.time())  # '15:30:45'
@@ -29,8 +30,7 @@ print(fake.time())  # '15:30:45'
 print(fake.text())  # Полный абзац текста
 print(fake.sentence())  # Отдельное предложение
 print(fake.word())  # Случайное слово
-
-
+#
 print(fake.credit_card_number())  # '4455 5299 1152 2450'
 print(fake.credit_card_expire())  # '03/25'
 print(fake.currency_code())  # 'USD'
@@ -57,6 +57,8 @@ for _ in range(100):
 print(used_emails_base)
 print(used_emails)
 
+assert set(used_emails_base) == used_emails
+
 # Сброс уникальности
 fake.unique.clear()
 
@@ -64,6 +66,8 @@ fake.unique.clear()
 used_emails2 = set()
 for _ in range(100):
     email = fake.email()
-    used_emails.add(email)
+    used_emails2.add(email)
 
 print(used_emails2)
+
+assert len(set(used_emails2)) == len(used_emails2)
